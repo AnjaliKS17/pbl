@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Breast Cancer Detection</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            text-align:center;
+            background:#f5f5f5;
+            margin-top:50px;
+        }
+
+        h1{
+            color:#d63384;
+        }
+
+        form{
+            background:white;
+            padding:30px;
+            display:inline-block;
+            border-radius:10px;
+        }
+
+        button{
+            padding:10px 20px;
+            background:#d63384;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Breast Cancer Detection System</h1>
+
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <input type="file" name="file" required>
+
+        <br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+</body>
+
+</html>
